@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: istio-demo-v1
+spec:
+  hosts:
+  - version1
+  http:
+  - match:
+    - uri:
+        exact: /
+    route:
+    - destination:
+        host: istio-demo-v1
+        port:
+          number: 80
