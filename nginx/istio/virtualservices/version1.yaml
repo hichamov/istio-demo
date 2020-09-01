@@ -4,7 +4,7 @@ metadata:
   name: istio-demo-v1
 spec:
   gateways: 
-  - istio-demo-v1
+  - bookinfo-gateway
   hosts:
   - version1.hicham.com
   http:
