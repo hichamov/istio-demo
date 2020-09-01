@@ -9,4 +9,4 @@ spec:
        port: 80
     selector: 
        app: istio-demo-v1
-       version: 1
+       version: '1'
