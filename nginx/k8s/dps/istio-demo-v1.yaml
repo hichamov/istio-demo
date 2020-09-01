@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment          
+metadata: 
+  name: istio-demo-v1
+  labels: 
+    app: istio-demo-v1
+    version: 1
+spec:
+  template:
+    metadata:
+      name: istio-demo-v1
+      labels:                      
+         app: istio-demo-v1
+         version: 1
+    spec:
+      containers:
+        - name: istio-demo-v1
+          image: hicham7farhi/istio-demo-v1:0.0.1
+  replicas: 2
