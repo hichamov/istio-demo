@@ -3,6 +3,8 @@ kind: VirtualService
 metadata:
   name: istio-demo-v2
 spec:
+  gateways: 
+  - istio-demo-v2
   hosts:
   - version2.hicham.com
   http:
