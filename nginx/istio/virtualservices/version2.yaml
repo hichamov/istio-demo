@@ -4,7 +4,7 @@ metadata:
   name: istio-demo-v2
 spec:
   hosts:
-  - version2
+  - version2.hicham.com
   http:
   - match:
     - uri:
