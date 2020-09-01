@@ -3,7 +3,7 @@ kind: DestinationRule
 metadata:
   name: istio-demo-v2
 spec:
-  host: istio-demo-v2
+  host: version2
   subsets:
   - name: v2
     labels:
