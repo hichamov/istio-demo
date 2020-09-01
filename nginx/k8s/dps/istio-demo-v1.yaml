@@ -17,3 +17,6 @@ spec:
         - name: istio-demo-v1
           image: hicham7farhi/istio-demo-v1:0.0.1
   replicas: 2
+  selector: 
+    matchLabels:
+         app: istio-demo-v1
