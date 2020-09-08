@@ -15,7 +15,7 @@ steady-state-hypothesis:
       type: http
       timeout: 3
       verify_tls: false
-      url: http://192.168.111.170/
+      url: http://192.168.111.170:30008/
 method:
 - type: action
   name: terminate-app-pod
@@ -24,7 +24,7 @@ method:
     module: chaosk8s.pod.actions
     func: terminate_pods
     arguments:
-      label_selector: app=rating
+      label_selector: app=sample
       rand: true
       ns: default
   pauses: 

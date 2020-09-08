@@ -44,8 +44,16 @@ kubectl apply -f apps/sample/deployment.yaml
 # chaos run 04-terminate-pod-status.yaml
 ```
 
-5) Testing the application
+5) Testing the application through HTTP
+
+Deploy service
 
 ```
-# chaos
+kubectl apply -f apps/sample/svc.yaml
+```
+
+Test http request 
+
+```
+# chaos run chaos/k8s/05-test-application-http.yaml
 ```
