@@ -16,17 +16,23 @@ Destroy application
 # chaos run 01-terminate-pod.yaml
 ```
 
+Redeploy Pod
+
 2) Add Steady-state-hypothesis
 
 ```
 # chaos run 02-terminate-pod-ssh.yaml
 ```
 
+Redeploy Pod
+
 3) Add pause
 
 ```
 # chaos run 03-terminate-pod-pause.yaml
 ```
+
+Deploy controller
 
 4) Test Pod status
 

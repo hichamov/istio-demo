@@ -29,4 +29,4 @@ method:
       rand: true
       ns: default
   pauses: 
-    after: 40
+    after: 30
