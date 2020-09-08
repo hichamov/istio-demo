@@ -41,10 +41,7 @@ method:
       routes:
         - destination:
             host: details
-            subset: 
-            - name: v1
-              labels:
-                version: v1
+            subset: 'v1'
       percentage: 50
       version: networking.istio.io/v1alpha3
       ns: default
