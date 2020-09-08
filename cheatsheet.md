@@ -68,6 +68,12 @@ curl -o /dev/null -s -w "%{http_code}\n" http://192.168.111.170:30008/
 # chaos run chaos/k8s/05-test-application-http.yaml
 ```
 
+Destroy applicaion dependencies
+
+Deploy go-demo-8
+
+
+
 ### Istio
 
 
