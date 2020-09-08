@@ -15,7 +15,7 @@ spec:
       containers:
         - name: nginx-deployment
           image: nginx
-  replicas: 3
+  replicas: 1
   selector: 
     matchLabels:
         app: sample

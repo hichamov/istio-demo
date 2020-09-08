@@ -9,7 +9,7 @@ steady-state-hypothesis:
   probes:
   - name: pod-exists
     type: probe
-    tolerance: 3
+    tolerance: 1
     provider:
       type: python
       func: count_pods
