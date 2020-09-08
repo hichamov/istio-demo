@@ -41,7 +41,7 @@ method:
       routes:
         - destination:
             host: details
-            subsets: 
+            subset: 
                version: v1
       percentage: 50
       version: networking.istio.io/v1alpha3
