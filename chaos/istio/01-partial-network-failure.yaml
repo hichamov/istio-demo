@@ -38,7 +38,10 @@ method:
     arguments:
       virtual_service_name: bookinfo
       http_status: 500
-      routes: details
+      routes:
+        - destination:
+            host: details
+            subset: v1
       percentage: 50
       version: networking.istio.io/v1alpha3
       ns: default
