@@ -41,8 +41,7 @@ method:
       routes:
         - destination:
             host: details
-            port:
-              number: 9080
+            subset: v1
       percentage: 50
       version: networking.istio.io/v1alpha3
       ns: default
