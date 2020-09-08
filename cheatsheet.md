@@ -90,4 +90,6 @@ run the experiment
 
 ### Istio
 
+Test partial network failure
+
 
