@@ -5,10 +5,6 @@ tags:
 - k8s
 - pod
 - http
-configuration:
-  ingress_host:
-      type: env
-      key: INGRESS_HOST
 steady-state-hypothesis:
   title: The app is healthy
   probes:
