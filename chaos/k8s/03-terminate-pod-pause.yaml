@@ -15,7 +15,7 @@ steady-state-hypothesis:
       func: count_pods
       module: chaosk8s.pod.probes
       arguments:
-        label_selector: type=controller
+        label_selector: app=sample
         ns: default
 method:
 - type: action
@@ -25,7 +25,7 @@ method:
     module: chaosk8s.pod.actions
     func: terminate_pods
     arguments:
-      label_selector: type=controller
+      label_selector: app=sample
       rand: true
       ns: default
   pauses: 
