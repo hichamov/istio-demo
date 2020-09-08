@@ -72,6 +72,10 @@ Destroy applicaion dependencies
 
 Deploy go-demo-8
 
+```
+kubectl create ns go-demo-8
+kubectl apply -f apps/go-demo-8/ -n go-demo-8
+```
 
 
 ### Istio
