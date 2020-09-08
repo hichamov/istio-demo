@@ -34,6 +34,10 @@ Redeploy Pod
 
 Deploy controller
 
+```
+kubectl apply -f apps/sample/deployment.yaml
+```
+
 4) Test Pod status
 
 ```
