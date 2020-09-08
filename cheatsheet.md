@@ -38,7 +38,13 @@ Deploy controller
 kubectl apply -f apps/sample/deployment.yaml
 ```
 
-4) Test Pod status
+Rerun the test
+
+```
+# chaos run 03-terminate-pod-pause.yaml
+```
+
+4) Test pods status
 
 ```
 # chaos run 04-terminate-pod-status.yaml
@@ -61,3 +67,7 @@ curl -o /dev/null -s -w "%{http_code}\n" http://192.168.111.170:30008/
 ```
 # chaos run chaos/k8s/05-test-application-http.yaml
 ```
+
+### Istio
+
+
