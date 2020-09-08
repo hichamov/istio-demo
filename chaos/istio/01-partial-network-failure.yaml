@@ -47,18 +47,3 @@ method:
       ns: default
   pauses:
     after: 3
-rollbacks:
-- type: action
-  name: remove-abort-failure
-  provider:
-    type: python
-    func: remove_abort_fault
-    module: chaosistio.fault.actions
-    arguments:
-      virtual_service_name: bookinfo
-      routes:
-        - destination:
-            host: details
-            subset: primary
-      version: networking.istio.io/v1alpha3
-      ns: default
