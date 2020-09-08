@@ -1,4 +1,3 @@
-```
 version: 1.0.0
 title: What happens if we terminate an instance of the DB?
 description: If an instance of the DB is terminated, dependant applications should still be operational.
