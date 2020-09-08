@@ -41,6 +41,7 @@ method:
       routes:
         - destination:
             host: details
+            subset: primary
       percentage: 50
       version: networking.istio.io/v1alpha3
       ns: default
@@ -58,5 +59,6 @@ rollbacks:
       routes:
         - destination:
             host: details
+            subset: primary
       version: networking.istio.io/v1alpha3
       ns: default
