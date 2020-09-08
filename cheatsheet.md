@@ -77,6 +77,16 @@ kubectl create ns go-demo-8
 kubectl apply -f apps/go-demo-8/ -n go-demo-8
 ```
 
+Test the application 
+
+with curl
+curl -o /dev/null -s -w "%{http_code}\n" http://192.168.111.170:30009/
+
+run the experiment
+
+```
+# chaos run chaos/k8s/06-destroy-app-dependenies.yaml
+```
 
 ### Istio
 
