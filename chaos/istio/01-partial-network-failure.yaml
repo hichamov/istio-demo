@@ -46,7 +46,7 @@ method:
       version: networking.istio.io/v1alpha3
       ns: default
   pauses:
-    after: 1
+    after: 3
 rollbacks:
 - type: action
   name: remove-abort-failure
