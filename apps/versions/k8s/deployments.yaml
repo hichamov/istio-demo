@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment          
+metadata:
+  namespace: istio-demo
+  name: version1
+  labels: 
+    app: v1
+spec:
+  template:
+    metadata:
+      name: version1
+      labels:                      
+        app: v1         
+    spec:
+      containers:
+        - name: nginx-container
+          image: hicham7farhi/istio-demo-v1:0.0.2
+  replicas: 1
+  selector: 
+    matchLabels:
+        app: v1
+---
+apiVersion: apps/v1
+kind: Deployment          
+metadata:
+  namespace: istio-demo
+  name: version2
+  labels: 
+    app: v2
+spec:
+  template:
+    metadata:
+      name: version2
+      labels:                      
+        app: v2         
+    spec:
+      containers:
+        - name: nginx-container
+          image: hicham7farhi/istio-demo-v2:0.0.2
+  replicas: 1
+  selector: 
+    matchLabels:
+        app: v2
